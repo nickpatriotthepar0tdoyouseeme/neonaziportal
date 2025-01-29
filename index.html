@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('nazi.jpg') no-repeat center center/cover;
+        }
+
+        .login-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .login-container input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            background: #ff6600;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .login-container button:hover {
+            background: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>KAMAL 9/4 RIGHT WING NEONAZISTS PORTAL LOGIN</h2>
+<form onsubmit="return validateLogin()">
+    <input type="text" name="username" id="username" placeholder="Username" required>
+    <input type="password" name="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+</form>
+
+<script>
+    function validateLogin() {
+        const users = {
+            "pishva": "999333666",
+            "physicist": "333666999",
+            "moaven": "888888888",
+            "geshtapoboss": "777777777"
+        };
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (users[username] === password) {
+            localStorage.setItem("loggedInUser", username);
+            window.location = 'page.html';
+            return false;
+        } else {
+            alert("Invalid credentials!");
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>

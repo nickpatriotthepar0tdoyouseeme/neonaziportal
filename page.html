@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads</title>
+    <style>
+        .pdf-list div {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pdf-list a {
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.pdf-list a:hover {
+    text-decoration: underline;
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('nazi.jpg') no-repeat center center/cover;
+            flex-direction: column;
+            color: white;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .pdf-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pdf-list li {
+            margin: 10px 0;
+        }
+
+        .pdf-list a {
+            color: #ff6600;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .pdf-list a:hover {
+            text-decoration: underline;
+        }
+
+        .profile-image {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid black;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="picture.jpg" alt="Profile" class="profile-image">
+    <h2>hello</h2><h2 id="user-name"></h2>
+    <script>
+    const users = {
+        "pishva": "MOHAMADSADRA AFSHAR",
+        "physicist": "ARYA ASSADPOUR",
+        "moaven": "moaven",
+        "geshtapoboss": "MOHAMMADAEEN SAYAH"
+    };
+
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    if (users[loggedInUser]) {
+        document.getElementById("user-name").innerText = users[loggedInUser];
+    }
+</script>
+
+   <div class="container">
+    <h2>اسناد</h2>
+    <div class="pdf-list">
+        <div><a href="#">mosavabeh-1-null.pdf</a></div>
+        <div><a href="#">mosavabeh-2-null.pdf</a></div>
+        <div><a href="#">mosavabeh-3-null.pdf</a></div>
+        <div><a href="#">mosavabeh-4-null.pdf</a></div>
+        <div><a href="#">mosavabeh-5-null.pdf</a></div>
+        <div><a href="#">mosavabeh-6-null.pdf</a></div>
+        <div><a href="#">mosavabeh-7-null.pdf</a></div>
+        <div><a href="#">mosavabeh-8-null.pdf</a></div>
+        <div><a href="#">mosavabeh-9-null.pdf</a></div>
+        <div><a href="#">mosavabeh-10-null.pdf</a></div>
+    </div>
+</div>
+<div class="container">
+    <h2>پی دی اف خام مصوبات رسمی مجلس نیو نازیست</h2>
+    <div class="pdf-list">
+        <div><a href="00.jpeg">---pdf mosavabat kham---</a></div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
